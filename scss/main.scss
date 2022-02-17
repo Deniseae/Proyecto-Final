@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+/* Index */
+body{
+    background-color: white;
+    header{
+        background-color: white;
+        margin-block-end: 15px;
+        .colorNav{
+            background-color: rgb(250, 200, 208);
+            margin-block-end: 80px;
+        }
+        h1{
+            text-align: left;
+        }
+    }
+    main{
+        .imagenesIndex{
+            h2{
+                color: rgb(128, 118, 114);
+                text-align: center;
+                text-decoration: none;
+                text-decoration: underline;
+                margin-block-end: 50px;
+            }
+            .flexImg{
+                display:flex;
+                list-style: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                align-content: space-around;
+                .bordeRedondeado{
+                    border-radius: 25%;
+                }
+                .bordeRedondeado:hover{
+                    transform: scale(1.5,1.5);
+                    transition: all 1s ease;
+                    border: black 1px solid;
+                }
+            }
+        }
+    }
+    footer{
+        background-image: url("/imagenes/mini-corazon-fondo-linea_62907-28.jpg");
+        .jadeLeft{
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            .flexFooter{
+                display: flex;
+                list-style: none;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: flex-end;
+                align-items: center;
+                align-content: space-around;
+                .footerImg{
+                    flex-direction: row;
+                }
+            }  
+        }
+    }
+}
+/* Cursos */
+.gridCurso{
+    display: grid;
+    grid-template-rows: .5fr 3fr .2fr;
+}
+main{
+    .grillaCursos{
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        h2{
+            color: rgb(128, 118, 114);
+            text-align: center;
+            text-decoration: none;
+            text-decoration: underline;
+            margin-block-end: 50px;
+        }
+        .cursosTexto{
+            color: white;
+            background-color: rgb(250, 200, 208);
+        }
+    } 
+}
+/* Contacto */
+header{
+    h1{
+        text-align: left;
+    }
+}
+main{
+    .ubicacion{
+        background-image: url('/imagenes/flower.jpg');
+        section{
+            h2{
+               color: rgb(128, 118, 114);
+               text-align: center;
+               text-decoration: none;
+               text-decoration: underline;
+               margin-block-end: 50px;
+            }
+        }
+    }
+    .formulario{
+        background-image: url('/imagenes/flower.jpg');
+        h2{
+            color: rgb(128, 118, 114);
+            text-align: center;
+            text-decoration: none;
+            text-decoration: underline;
+            margin-block-end: 50px;
+        }
+    }
+}
+/* Nosotros */
+.nosotrosUno{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    .botonNosotros{
+        background-color: pink;
+    }
+    h5{
+        color: black;
+    }
+}
+/* Tratamientos */
+main{
+    .titTratamientos{
+        text-align: center;
+        color: gray;
+    }
+}
+
+
+

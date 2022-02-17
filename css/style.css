@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-style: normal; }
+
+/* Index */
+body {
+  background-color: white; }
+  body header {
+    background-color: white;
+    margin-block-end: 15px; }
+    body header .colorNav {
+      background-color: #fac8d0;
+      margin-block-end: 80px; }
+    body header h1 {
+      text-align: left; }
+  body main .imagenesIndex h2 {
+    color: #807672;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-block-end: 50px; }
+  body main .imagenesIndex .flexImg {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: space-around; }
+    body main .imagenesIndex .flexImg .bordeRedondeado {
+      border-radius: 25%; }
+    body main .imagenesIndex .flexImg .bordeRedondeado:hover {
+      transform: scale(1.5, 1.5);
+      transition: all 1s ease;
+      border: black 1px solid; }
+  body footer {
+    background-image: url("/imagenes/mini-corazon-fondo-linea_62907-28.jpg"); }
+    body footer .jadeLeft {
+      color: black;
+      text-align: center;
+      text-decoration: none; }
+      body footer .jadeLeft .flexFooter {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: space-around; }
+        body footer .jadeLeft .flexFooter .footerImg {
+          flex-direction: row; }
+
+/* Cursos */
+.gridCurso {
+  display: grid;
+  grid-template-rows: .5fr 3fr .2fr; }
+
+main .grillaCursos {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+  main .grillaCursos h2 {
+    color: #807672;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-block-end: 50px; }
+  main .grillaCursos .cursosTexto {
+    color: white;
+    background-color: #fac8d0; }
+
+/* Contacto */
+header h1 {
+  text-align: left; }
+
+main .ubicacion {
+  background-image: url("/imagenes/flower.jpg"); }
+  main .ubicacion section h2 {
+    color: #807672;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-block-end: 50px; }
+
+main .formulario {
+  background-image: url("/imagenes/flower.jpg"); }
+  main .formulario h2 {
+    color: #807672;
+    text-align: center;
+    text-decoration: none;
+    text-decoration: underline;
+    margin-block-end: 50px; }
+
+/* Nosotros */
+.nosotrosUno {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+  .nosotrosUno .botonNosotros {
+    background-color: pink; }
+  .nosotrosUno h5 {
+    color: black; }
+
+/* Tratamientos */
+main .titTratamientos {
+  text-align: center;
+  color: gray; }
