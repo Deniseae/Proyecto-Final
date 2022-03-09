@@ -2,35 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+  font-family: Georgia, 'Times New Roman', Times, serif; }
 
 /* Index */
 body {
-  background-color: white; }
+  background-color: #FFE6E8;
+  /* Footer */ }
   body header {
-    background-color: white;
-    margin-block-end: 15px; }
+    background-color: #F2CCC3;
+    margin-block-end: 5px; }
+    body header .logo {
+      text-align: center; }
     body header .colorNav {
-      background-color: #fac8d0;
-      margin-block-end: 80px; }
-    body header h1 {
-      text-align: left; }
-  body main .imagenesIndex h2 {
-    color: #807672;
+      background-color: #E68BB4;
+      margin-block-end: 80px;
+      display: flex;
+      color: aliceblue; }
+  body main .imagenesIndex h1 {
+    margin-top: 50px;
+    color: white;
     text-align: center;
     text-decoration: none;
-    text-decoration: underline;
-    margin-block-end: 50px; }
+    margin-block-end: 80px; }
   body main .imagenesIndex .flexImg {
-    display: flex;
-    list-style: none;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-end;
-    align-items: center;
-    align-content: space-around; }
+    text-align: center;
+    align-content: space-around;
+    margin-block-end: 80px; }
     body main .imagenesIndex .flexImg .bordeRedondeado {
       border-radius: 25%; }
     body main .imagenesIndex .flexImg .bordeRedondeado:hover {
@@ -38,27 +40,19 @@ body {
       transition: all 1s ease;
       border: black 1px solid; }
   body footer {
-    background-image: url("/imagenes/mini-corazon-fondo-linea_62907-28.jpg"); }
-    body footer .jadeLeft {
-      color: black;
-      text-align: center;
-      text-decoration: none; }
-      body footer .jadeLeft .flexFooter {
-        display: flex;
-        list-style: none;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        align-items: center;
-        align-content: space-around; }
-        body footer .jadeLeft .flexFooter .footerImg {
-          flex-direction: row; }
+    background-color: #E68BB4;
+    color: white; }
+    body footer .footerIndex {
+      list-style: none; }
+      body footer .footerIndex .afooterIndex {
+        color: white;
+        text-decoration: none; }
+      body footer .footerIndex .liIndex .afooterIndex:hover {
+        background-color: pink;
+        color: black;
+        font-weight: bold; }
 
 /* Cursos */
-.gridCurso {
-  display: grid;
-  grid-template-rows: .5fr 3fr .2fr; }
-
 main .grillaCursos {
   display: flex;
   list-style: none;
@@ -66,36 +60,50 @@ main .grillaCursos {
   align-content: space-around;
   align-items: center;
   flex-direction: column; }
-  main .grillaCursos h2 {
-    color: #807672;
+  main .grillaCursos h1 {
+    color: white;
     text-align: center;
     text-decoration: none;
-    text-decoration: underline;
     margin-block-end: 50px; }
   main .grillaCursos .cursosTexto {
     color: white;
-    background-color: #fac8d0; }
+    background-color: #fac8d0;
+    display: block;
+    margin: 40px; }
+  main .grillaCursos .grillaTarjetas {
+    margin-block: 30px;
+    flex-direction: row; }
+  main .grillaCursos .container {
+    display: grid;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "area1 area2" "area1 area2"; }
+  main .grillaCursos .area1 {
+    grid-area: area1; }
+  main .grillaCursos .area2 {
+    grid-area: area2; }
 
 /* Contacto */
 header h1 {
   text-align: left; }
 
 main .ubicacion {
-  background-image: url("/imagenes/flower.jpg"); }
+  background-color: #f1c0e8; }
   main .ubicacion section h2 {
-    color: #807672;
+    color: white;
     text-align: center;
     text-decoration: none;
-    text-decoration: underline;
     margin-block-end: 50px; }
 
 main .formulario {
-  background-image: url("/imagenes/flower.jpg"); }
-  main .formulario h2 {
-    color: #807672;
+  background-color: #E3879E; }
+  main .formulario h1 {
+    color: white;
     text-align: center;
     text-decoration: none;
-    text-decoration: underline;
     margin-block-end: 50px; }
 
 /* Nosotros */
@@ -114,4 +122,10 @@ main .formulario {
 /* Tratamientos */
 main .titTratamientos {
   text-align: center;
-  color: gray; }
+  color: #f8f8f6;
+  font-family: 'Philosopher',sans-serif; }
+
+main .segundoTitulo {
+  text-align: center;
+  color: #cfbaf0;
+  margin-top: 30px; }
